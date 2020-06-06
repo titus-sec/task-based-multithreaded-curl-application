@@ -27,7 +27,7 @@ git clone https://github.com/Microsoft/vcpkg.git
 cd vcpkg
 ./bootstrap-vcpkg.sh
 ./vcpkg integrate install
-vcpkg install curl[tool]
+./vcpkg install libcurl
 ```
 
 Libraries used (alternative installation methods are provided in the provided GitHub repositories):
