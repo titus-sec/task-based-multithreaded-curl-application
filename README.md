@@ -20,14 +20,14 @@ cd vcpkg
 ./vcpkg install jsoncpp
 ```
 
-You can download and install curl and libcurl using the vcpkg dependency manager:
+You can download and install curl using the vcpkg dependency manager:
 
 ```
 git clone https://github.com/Microsoft/vcpkg.git
 cd vcpkg
 ./bootstrap-vcpkg.sh
 ./vcpkg integrate install
-./vcpkg install libcurl
+./vcpkg install curl
 ```
 
 Alternative installation methods are provided in the provided GitHub repositories:
