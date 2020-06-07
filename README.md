@@ -1,13 +1,13 @@
 # Task-based multithreaded cURL application for transferring COVID-19 Coronavirus statistics
 
+![](images/run.png)
+
+*Note: This was a university project.*
+
+Basically, we were asked to make a multithreaded application by choosing a specific design pattern depending on the application. 
+I've also made a presentation where I explained why I did things the way I did with arguments and boxplots. I've implemented task-based parallelism and used a farming pattern because of the nature of my application. In the application, I run multiple data requests to a database which can be easily parallelised using a task-based sytstem. The farming pattern is a useful pattern to use when there is a problem that can be broken into lots of parts and have no data dependencies between them, therefore the farming pattern first my project very well. Also, the load balancing of the application is improved, and the worker threads can be long-running instead of destroying the threads after each task which is costly. Anyways, I've encountered a few data dependency situations when solving the problem. For instance, I had to get a list of available countries in the database before sending multithreaded requests of data for each country. However, single threaded tasks like these took less than 10% of the application runtime, including functions such as main. However, during multiple performance profilings, the application ran significantly faster when multithreaded i.e. despite a few data dependencies, the speed performance of the application is directly proportional to the number of ran threads. Also, the implemented number of threads was inversely proportional to the time spent solving the problem, which is expected as the multithreaded tasks are solved quicker with multiple threads. 
+
 I've implemented open source libcurl (https://github.com/curl/curl) and json parser (https://github.com/open-source-parsers/jsoncpp) libraries to get COVID-19 statistics of each country worldwide. My goal was to get countries’ number of confirmed cases and deaths caused by COVID-19 efficiently, hence I've implemented multithreaded task-based parallelism system. 
-
-
-*update this*
-
-## Getting Started *update this*
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Installing libraries
 
@@ -56,3 +56,6 @@ CMP 202 Data Structures and Algorithms 2
 ## Acknowledgments *update this*
 
 Thanks libcurl (https://github.com/curl/curl) and JsonCpp (https://github.com/open-source-parsers/jsoncpp) :)
+
+API used: “Coronavirus COVID19 API” (https://covid19api.com; API documentation: https://documenter.getpostman.com/view/10808728/SzS8rjbc)
+
