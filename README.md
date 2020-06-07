@@ -13,6 +13,7 @@ I've implemented task-based parallelism and used a farming pattern because of th
 Anyways, I've encountered a few data dependency situations when solving the problem. For instance, I had to get a list of available countries in the database before sending multithreaded requests of data for each country.
 
 ![](images/tasks.png)
+
 *get a list of available countries in the database before sending multithreaded requests of data for each country*
 
 As expected, single threaded tasks like these took less than 10% of the application runtime, including functions such as main.
