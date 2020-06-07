@@ -53,9 +53,10 @@ Give an example
 Abertay University
 CMP 202 Data Structures and Algorithms 2
 
-## Acknowledgments *update this*
+## Acknowledgments
 
-API used: “Coronavirus COVID19 API” (https://covid19api.com; API documentation: https://documenter.getpostman.com/view/10808728/SzS8rjbc)
+API used: “Coronavirus COVID19 API” (https://covid19api.com; 
+API documentation: https://documenter.getpostman.com/view/10808728/SzS8rjbc)
 
 Libraries used (alternative installation methods are provided in the provided GitHub repositories):
 libcurl (https://curl.haxx.se/ ; GitHub repo: https://github.com/curl/curl)
