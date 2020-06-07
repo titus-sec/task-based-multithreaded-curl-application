@@ -18,6 +18,7 @@ Anyways, I've encountered a few data dependency situations when solving the prob
 As expected, single threaded tasks like these took less than 10% of the application runtime, including functions such as main.
 
 ![](images/profiling.png)
+
 *single threaded tasks like these took less than 10% of the application runtime*
 
 However, during multiple performance profilings, the application ran significantly faster when multithreaded i.e. despite a few data dependencies, the speed performance of the application is directly proportional to the number of ran threads. Also, the implemented number of threads was inversely proportional to the time spent solving the problem, which is expected as the multithreaded tasks are solved quicker with multiple threads. 
