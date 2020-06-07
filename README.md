@@ -30,9 +30,9 @@ cd vcpkg
 ./vcpkg install libcurl
 ```
 
-Libraries used (alternative installation methods are provided in the provided GitHub repositories):
-libcurl (https://curl.haxx.se/ ; GitHub repo: https://github.com/curl/curl)
-JsonCpp (GitHub repo: https://github.com/open-source-parsers/jsoncpp)
+Alternative installation methods are provided in the provided GitHub repositories:
+libcurl (https://github.com/curl/curl)
+JsonCpp (https://github.com/open-source-parsers/jsoncpp)
 
 ## Running the tests *update this*
 
@@ -55,7 +55,8 @@ CMP 202 Data Structures and Algorithms 2
 
 ## Acknowledgments *update this*
 
-Thanks libcurl (https://github.com/curl/curl) and JsonCpp (https://github.com/open-source-parsers/jsoncpp) :)
-
 API used: “Coronavirus COVID19 API” (https://covid19api.com; API documentation: https://documenter.getpostman.com/view/10808728/SzS8rjbc)
 
+Libraries used (alternative installation methods are provided in the provided GitHub repositories):
+libcurl (https://curl.haxx.se/ ; GitHub repo: https://github.com/curl/curl)
+JsonCpp (GitHub repo: https://github.com/open-source-parsers/jsoncpp)
